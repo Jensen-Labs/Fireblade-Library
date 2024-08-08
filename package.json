@@ -1,0 +1,19 @@
+{
+  "name": "fireblade-library",
+  "version": "1.0.0",
+  "description": "Used for working with Jensen Labs clients to provide direct realtime monitoring and reporting of logs, warnings, errors and process failures.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jensen-Labs/Fireblade-Library.git"
+  },
+  "author": "Angus Moore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jensen-Labs/Fireblade-Library/issues"
+  },
+  "homepage": "https://github.com/Jensen-Labs/Fireblade-Library#readme"
+}
