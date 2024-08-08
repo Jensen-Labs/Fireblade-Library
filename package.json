@@ -2,9 +2,13 @@
   "name": "fireblade-library",
   "version": "1.0.0",
   "description": "Used for working with Jensen Labs clients to provide direct realtime monitoring and reporting of logs, warnings, errors and process failures.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.esm.js",
+  "unpkg": "./dist/index.umd.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/Jensen-Labs/Fireblade-Library/issues"
   },
-  "homepage": "https://github.com/Jensen-Labs/Fireblade-Library#readme"
+  "homepage": "https://github.com/Jensen-Labs/Fireblade-Library#readme",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  },
+  "type": "module",
+  "source": "index.ts",
+  "exports": {
+		"types": "./dist/index.d.ts",
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.esm.js"
+  }
 }
