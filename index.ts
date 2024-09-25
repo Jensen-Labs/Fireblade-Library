@@ -1,5 +1,4 @@
 import { JensenClient } from "./JensenClient";
-import { ProjectLogType } from "./projectLog";
 import * as dotenv from 'dotenv';
 dotenv.config();
 
