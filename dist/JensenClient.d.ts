@@ -1,4 +1,4 @@
-import { ProjectLogType } from "../projectLog";
+import { ProjectLogType } from "./projectLog";
 declare class JensenDispatcher {
     private projectKey;
     private url;

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.JensenClient = void 0;
-const projectLog_1 = require("../projectLog");
+const projectLog_1 = require("./projectLog");
 class JensenDispatcher {
     projectKey;
     // private url = 'http://localhost:3000/api/logs';
