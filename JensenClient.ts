@@ -7,9 +7,13 @@ class JensenDispatcher
     // private url = 'http://localhost:3000/api/logs';
     private url = 'https://fireblade.jensenlabs.dev/api/logs';
 
-    constructor(projectKey?: string)
+    constructor()
     {
-        this.projectKey = projectKey || process.env.JENSEN_LABS_PROJECT_API_KEY || '';
+        // grab a possible of publicly available keys based on different frameworks
+        // for instance, NEXT_PUBLIC_FIREBLADE_API_KEY for Next.js
+        // or REACT_APP_FIREBLADE_API_KEY for React
+        const publicProjectKey = process.env.NEXT_PUBLIC_FIREBLADE_API_KEY || process.env.REACT_APP_FIREBLADE_API_KEY || process.env.FIREBLADE_API_KEY || '';
+        this.projectKey = publicProjectKey;
         if (!this.projectKey)
         {
             throw new Error("You must supply a project key for the Jensen Fireblade Client to work.");
@@ -71,9 +75,9 @@ export class JensenClient extends JensenDispatcher
 {
     // we want to inherit the constructor and then overload the sendEvent function for each projectlog type
     // we can use the super keyword to call the parent class constructor
-    constructor(projectKey?: string)
+    constructor()
     {
-        super(projectKey);
+        super();
     }
 
     public async userEvent(data: {

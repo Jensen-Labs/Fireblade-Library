@@ -2,7 +2,7 @@ import { ProjectLogType } from "./projectLog";
 declare class JensenDispatcher {
     private projectKey;
     private url;
-    constructor(projectKey?: string);
+    constructor();
     sendEvent(data: {
         title: string;
         description: string;
@@ -26,7 +26,7 @@ declare class JensenDispatcher {
  * });
  */
 export declare class JensenClient extends JensenDispatcher {
-    constructor(projectKey?: string);
+    constructor();
     userEvent(data: {
         title: string;
         description: string;
