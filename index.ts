@@ -1,9 +1,12 @@
 import { JensenClient } from "./JensenClient";
+import { ProjectLogType } from "./projectLog";
+import * as dotenv from 'dotenv';
+dotenv.config();
 
-export function sum(a: number, b: number) {
-    const jensen = new JensenClient('project key goes here!');
-    jensen.warn('There was a warning!');
-    return a + b;
+export class JensenClientFactory
+{
+    public static createClient(): JensenClient
+    {
+        return new JensenClient(process.env.JENSEN_LABS_PROJECT_API_KEY);
+    }
 }
-
-sum(15, 25);

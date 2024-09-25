@@ -1,12 +1,12 @@
 {
-  "name": "fireblade-library",
+  "name": "@jensen-labs/fireblade",
   "version": "1.0.0",
   "description": "Used for working with Jensen Labs clients to provide direct realtime monitoring and reporting of logs, warnings, errors and process failures.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.esm.js",
   "unpkg": "./dist/index.umd.js",
-	"types": "./dist/index.d.ts",
-	"scripts": {
+  "types": "./dist/index.d.ts",
+  "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch"
   },
@@ -21,13 +21,18 @@
   },
   "homepage": "https://github.com/Jensen-Labs/Fireblade-Library#readme",
   "devDependencies": {
+    "@types/node": "^22.7.0",
     "microbundle": "^0.15.1"
   },
   "type": "module",
   "source": "index.ts",
   "exports": {
-		"types": "./dist/index.d.ts",
+    "types": "./dist/index.d.ts",
     "require": "./dist/index.cjs",
     "default": "./dist/index.esm.js"
+  },
+  "dependencies": {
+    "@types/dotenv": "^6.1.1",
+    "dotenv": "^16.4.5"
   }
 }
