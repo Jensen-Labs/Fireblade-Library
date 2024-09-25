@@ -4,8 +4,8 @@ import { ProjectLog, ProjectLogType } from "./projectLog";
 class JensenDispatcher
 {
     private projectKey: string;
-    private url = 'http://localhost:3000/api/logs';
-    // private url = 'https://fireblade.jensenlabs.dev/api/logs';
+    // private url = 'http://localhost:3000/api/logs';
+    private url = 'https://fireblade.jensenlabs.dev/api/logs';
 
     constructor(projectKey?: string)
     {
