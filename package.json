@@ -1,12 +1,16 @@
 {
   "name": "@jensenlabs/fireblade",
-  "version": "1.0.8",
+  "version": "1.0.12",
   "description": "Used for working with Jensen Labs clients to provide direct realtime monitoring and reporting of logs, warnings, errors and process failures.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "/dist"
   ],
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jensen-Labs/Fireblade-Library.git"
