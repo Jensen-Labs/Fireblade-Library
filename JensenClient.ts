@@ -44,11 +44,10 @@ class JensenDispatcher
 
         const response = await fetch(this.url, {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${this.projectKey}`,
-            },
-            body: JSON.stringify(projectLog)
+            body: JSON.stringify({
+                log: projectLog,
+                apiKey: this.projectKey
+            })
         });
 
         if (!response.ok)
