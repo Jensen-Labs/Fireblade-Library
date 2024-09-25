@@ -1,6 +1,6 @@
 {
   "name": "@jensenlabs/fireblade",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Used for working with Jensen Labs clients to provide direct realtime monitoring and reporting of logs, warnings, errors and process failures.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

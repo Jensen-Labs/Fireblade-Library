@@ -1,4 +1,4 @@
 import { JensenClient } from "./JensenClient";
-export declare class JensenClientFactory {
+export default class JensenClientFactory {
     static createClient(): JensenClient;
 }

@@ -1,11 +1,9 @@
 {
     "compilerOptions": {
-      "module": "commonjs",
-      "target": "ESNext",
-      "declaration": true,
-      "outDir": "./dist"
+        "module": "commonjs",
+        "target": "ESNext",
+        "declaration": true,
+        "outDir": "./dist"
     },
-    "include": [
-        "src/**/*"
-, "index.ts", "JensenClient.ts"    ]
+    "include": ["src/**/*", "index.ts", "JensenClient.ts"]
 }
