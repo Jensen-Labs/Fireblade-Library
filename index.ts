@@ -4,8 +4,8 @@ dotenv.config();
 
 export default class JensenClientFactory
 {
-    public static createClient(): JensenClient
+    public static createClient(projectApiKey: string): JensenClient
     {
-        return new JensenClient(process.env.JENSEN_LABS_PROJECT_API_KEY);
+        return new JensenClient(projectApiKey);
     }
 }
