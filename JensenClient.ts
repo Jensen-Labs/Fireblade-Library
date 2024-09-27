@@ -4,7 +4,6 @@ import { ProjectLog, ProjectLogType } from "./projectLog";
 class JensenDispatcher
 {
     private projectKey: string;
-    // private url = 'http://localhost:3000/api/logs';
     private url = 'https://fireblade.jensenlabs.dev/api/logs';
 
     constructor()
@@ -36,7 +35,7 @@ class JensenDispatcher
             content: title,
             description: description,
             eventMetadata: eventMetadata,
-            eventType: ProjectLogType.USER_EVENT,
+            eventType: data.logType,
             timeElapsed: timeElapsed,
             userEmailInvoker: userEmailInvoker,
             userNameInvoker: userNameInvoker
